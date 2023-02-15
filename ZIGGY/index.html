@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- chunkytowndemo -->
+    <link href="//db.onlinewebfonts.com/c/9b0663eae090d7852df730e831fccdb3?family=Chunky+Town+Demo" rel="stylesheet" type="text/css"/>
+
+    <!-- main.css -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>ZIGGY</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ml-lg-5 my-lg-3">
+      <a class="navbar-brand d-lg-none  ml-4" href="index.html"><text class="a" >ZIGGY</text></a>
+      <button class="navbar navbar-toggler  d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+      
+    <div class="container-fluid">
+      <div class="row">
+
+          <!-- main col 1 -->
+          <div class="col-2 ml-5">
+
+           <nav id="sidebarMenu" class="col-md-3 d-md-block ml-5 sidebar sidebar collapse" style="width: 10em">
+              <a class="navbar-brand d-none d-lg-block ml-4" href="index.html"><text class="a" >ZIGGY</text></a>
+                      <!-- <button class="navbar navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button> -->
+                      <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-4">
+                            <a class="nav-link" href="orders.html">
+                              <img class="icon" src="/assets/images/Layer 2.png" alt="">
+                              Orders
+                            </a>
+                          </li>
+                          <li class="nav-item mb-4">
+                            <a class="nav-link" href="reports.html">
+                              <img class="icon" src="/assets/images/ai, computer, monitoring.png" alt="">
+                              Reports
+                            </a>
+                          </li>
+                          <li class="nav-item mb-4">
+                            <a class="nav-link" href="products.html">
+                              <img class="icon" src="/assets/images/Layer 8.png" alt="">
+                              Products
+                            </a>
+                          </li>
+                          <li class="nav-item mb-4">
+                            <a class="nav-link" href="#">
+                              <img class="icon" src="/assets/images/Layer 3.png" alt="">
+                              Settings
+                            </a>
+                          </li>
+                          <li class="nav-item mb-4">
+                            <a class="nav-link" href="#">
+                              <img class="icon" src="/assets/images/artificial, intelligence, mind, robot.png" alt="">
+                              Support
+                            </a>
+                          </li>
+                          <li class="nav-item mb-4 text-center">
+                            <a class="nav-link " href="#">
+                              Logout
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+              </div>
+
+              <!-- main col 2 -->
+              <div class="col-sm col-md-9 ml-4 mainCol">
+
+
+                <section>
+                  <div class="container">
+                      <div class="row">
+                        <div class="row-sm-2 row-md">
+                          <div class="col-md d-flex ml-md-5">
+                            <h5 class="font-weight-bold">May 20th - June 20th</h5>
+                          </div>
+                            <div class="col-12 text-center">
+                              <a class="text-info" href="#"><u>filter</u></a>
+                            </div>
+                        </div>
+                          <div class="col">
+                            <h6>Unfulfilled</h6>
+                            <h1 class="text-info font-weight-bold">16</h1>
+                            <small class="text-muted">(25 total Unfulfilled)</small>
+                          </div>
+                          <div class="col">
+                            <h6>Total orders</h6>
+                            <h1 class="text-info font-weight-bold">26</h1>
+                            <small class="text-muted">(45 total orders)</small>
+                          </div>
+                          <div class="col-sm text-center">
+                            <h6>Total Revenue</h6>
+                            <h1 class="text-info font-weight-bold">$2656</h1>
+                            <small class="text-muted">($4565 total revenue)</small>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </section>
+
+
+              <div class=" my-3">
+                <form class="search" >
+                  <input class="" type="text" placeholder="Type in names. products etc..." name="search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+
+
+              <section>
+                <div class="row mt-3">
+                  <div class="col-sm-1 text-muted"><small>Sort by:</small></div>
+                  <div class="dropdown">
+                    <a class="dropdown mr-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                      <small class="col-sm-1 text-muted">Marketplace<i class="fa-solid fa-angle-down pl-1"></i></small>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Market 1</a>
+                      <hr>
+                      <a class="dropdown-item" href="#">Market 2</a>
+                      <hr>
+                      <a class="dropdown-item" href="#">Market 3</a>
+                    </div>
+                  </div>
+
+                  <div class="dropdown">
+                    <a class="dropdown mr-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                      <small class="col-sm-1 text-muted">TAT<i class="fa-solid fa-angle-down pl-1"></i></small>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Yes</a>
+                      <hr>
+                      <a class="dropdown-item" href="#">No</a>
+                    </div>
+                  </div>
+                  
+                  <div class="dropdown">
+                    <a class="dropdown mr-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                      <small class="col-sm-1 text-muted">Status<i class="fa-solid fa-angle-down pl-1"></i></small>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">On</a>
+                      <hr>
+                      <a class="dropdown-item" href="#">Off</a>
+                    </div>
+                  </div>
+                  <div class="col-sm p-0">              
+                      <!-- trigger -->
+                      <a href="#create_order" class="" data-toggle="modal" data-target="#myModal"><small class="d-flex justify-content-center text-muted font-weight-bold"><u>Create Order</u></small></a>
+                      <!-- modal window -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="text-center mt-3">
+                                      <h5 class="modal-title text-muted">Create a Production List</h5>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control col-form-label col-form-label-lg" placeholder="Name List">
+                                      </div>
+                                      <div class="form-group">
+                                        <select id="inputState" class="form-control col-form-label col-form-label-lg text-muted">
+                                          <option selected>Products</option>
+                                          <option>Product 1</option>
+                                          <option>Product 3</option>
+                                          <option>Product 5</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group">
+                                        <select id="inputState" class="form-control col-form-label col-form-label-lg text-muted">
+                                          <option selected>Customers</option>
+                                          <option>Customer 1</option>
+                                          <option>Customer 2</option>
+                                          <option>Customer 3</option>
+                                        </select>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="mb-4 text-center">
+                                      <button class="btn btn-lg btn-success "><small>Create</small></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+
+                  </div>
+                  <div class="col d-flex justify-content-start">
+                    <label class="custom-file" id="customFile">
+                      <!-- <input type="file" class="custom-file-input">
+                      <span class="custom-file-control form-control-file"> -->
+                        <small class="text-muted font-weight-bold"><u>Order import</u></small>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col pl-0">
+                    <a href="production_list.html"><small class="text-muted font-weight-bold"><u>Production List</u></small></a>
+                  </div>
+                </div>
+              </section>
+
+              <!-- divider -->
+              <div class="divider bg-muted"><hr></div>
+
+               <section>
+                 <div class="row">
+                   <div class="col-sm">
+                     <div class="custom-control custom-checkbox mr-sm-2">
+                    <input type="checkbox" class=" text-info custom-control-input" id="customControlAutosizing">
+                    <label class="custom-control-label text-info" for="customControlAutosizing">Amanda Jenstad </label>
+                    <small class="text-muted">(2 unfulfilled orders)</small>
+                    <div class="row">
+                      <div class="col-2.5 text-center mt-3">
+                        <img src="/assets/images/Layer 5.png" width="55%" alt="">
+                        <p><small>(view order)</small></p>
+                      </div>
+                      <div class="col-4 mt-3">
+                        <h6><small class="font-weight-bold">Order Date<small class="text-muted ml-2">15/04/2022</small></small></h6>
+                        <h6><small class="font-weight-bold">Fullfillment Date <small class="text-muted ml-2">n/a</small></small></h6>
+                      </div>
+                      <div class="col-4 mt-3">
+                        <h6><small class="font-weight-bold">Total items<small class="text-muted ml-3">4 Items</small></small></h6>
+                        <h6><small class="font-weight-bold">Total price <small class="text-muted ml-3">$137</small></small></h6>
+                      </div>
+                      <!-- <div class="col"></div> -->
+                    </div>
+                  </div>
+                </div>
+                   <div class="col">
+                     <div class="row">
+                       <div class="col-md-6 col-lg-4 mb-3">
+                        <h6 class="font-weight-bold ">Tracking number</h6>
+                       </div>
+                       <div class="col">
+                        <!-- trigger -->
+                      <a href="#create_Shipping-Label" class="mb-3" data-toggle="modal" data-target="#myModal2"><small class="text-muted font-weight-bold"><u>Create Shipping Label</u></small></a>
+                      <!-- modal window -->
+                      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+                          <div class="modal-dialog modal-lg modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="text-center mt-3">
+                                      <h5 class="modal-title text-muted">Purchase Label</h5>
+                                  </div>
+                                  <div class="d-flex align-self-center">
+                                    <nav aria-label="breadcrumb">
+                                      <ol class="breadcrumb bg-white">
+                                        <li class="breadcrumb-item"><a href="#">Addresses</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Order</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Shipping</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                                      </ol>
+                                    </nav>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <!-- <div class="form-group">
+                                        <input type="text" class="form-control col-form-label col-form-label-lg" placeholder="Name List">
+                                      </div> -->
+                                      <h6 class="font-weight-bold">Where are you sending from?</h6>
+                                      <div class="form-group">
+                                        <select id="inputState" class="form-control col-form-label col-form-label-lg text-muted">
+                                          <option selected>56 2nd Ave, Brooklyn NY 11215</option>
+                                          <option>56 2nd Ave</option>
+                                          <option>Brooklyn NY 11215</option>
+                                          <option>street 123, xyz</option>
+                                        </select>
+                                      </div>
+                                      <h6 class="font-weight-bold">Who is the recipient?</h6>
+                                      <div class="row">
+                                        <div class="col">
+                                          <input type="name" class="form-control p-4" placeholder="Name">
+                                        </div>
+                                        <div class="col">
+                                          <input type="number" class="form-control p-4" placeholder="Phone (Optional)">
+                                        </div>
+                                      </div>
+                                      <div class="row mt-3">
+                                        <div class="col">
+                                          <input type="email" class="form-control p-4" placeholder="Email">
+                                        </div>
+                                        <div class="col">
+                                          <input type="text" class="form-control p-4" placeholder="Company (Optional)">
+                                        </div>
+                                      </div>
+                                      <h6 class="font-weight-bold mt-3">What is the address?</h6>
+                                      <div class="row">
+                                        <div class="col">
+                                          <input type="name" class="form-control p-4" placeholder="Address">
+                                        </div>
+                                        <div class="col">
+                                          <input type="number" class="form-control p-4" placeholder="Address 2 (Optional)">
+                                        </div>
+                                      </div>
+                                      <div class="form-row mt-3">
+                                        <div class="form-group col-md-4">
+                                          <!-- <label for="inputCity">City</label> -->
+                                          <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                          <!-- <label for="inputState">State</label> -->
+                                          <select id="inputState" class="form-control" placeholder="State">
+                                            <option selected>State</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                          <!-- <label for="inputZip">Zip</label> -->
+                                          <input type="text" class="form-control" id="inputZip" placeholder="Zipcode">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                          <!-- <label for="inputState">State</label> -->
+                                          <select id="inputState" class="form-control" placeholder="State">
+                                            <option selected>Country</option>
+                                            <option>pakistan</option>
+                                            <option>pakistan</option>
+                                            <option>pakistan</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="mb-4 text-center">
+                                      <button class="btn btn-lg btn-success px-5"><small>Next</small></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                       </div>
+                     </div>
+                     <div class="row rounded pb-3 bg-light">
+                       <div class="col">
+                         <small><u><a class="text-muted ml-lg-5" href="#">ORDERED</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">IN PROGRESS</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">READY</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">SHIPPED</a></u></small>
+                        <div class="progress" style="height: 20px; width: 100%;">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="text-center">
+                          <small class="text-danger">Turn Around Time is -6 days</small>
+                        </div>
+                       </div>
+                     </div>
+                     </div>
+                 </div>
+               </section>    
+              
+               <!-- divider -->
+               <div class="divider bg-muted"><hr></div>
+
+               <section>
+                 <div class="row">
+                   <div class="col-sm">
+                     <div class="custom-control custom-checkbox mr-sm-2">
+                    <input type="checkbox" class=" text-info custom-control-input" id="nextShipping">
+                    <label class="custom-control-label text-info" for="nextShipping">Amanda Jenstad </label>
+                    <small class="text-muted">(2 unfulfilled orders)</small>
+                    <div class="row">
+                      <div class="col-2.5 text-center mt-3">
+                        <img src="/assets/images/Layer 11.png" width="55%" alt="">
+                        <p><small>(view order)</small></p>
+                      </div>
+                      <div class="col-4 mt-3">
+                        <h6><small class="font-weight-bold">Order Date<small class="text-muted ml-2">15/04/2022</small></small></h6>
+                        <h6><small class="font-weight-bold">Fullfillment Date <small class="text-muted ml-2">n/a</small></small></h6>
+                      </div>
+                      <div class="col-4 mt-3">
+                        <h6><small class="font-weight-bold">Total items<small class="text-muted ml-3">4 Items</small></small></h6>
+                        <h6><small class="font-weight-bold">Total price <small class="text-muted ml-3">$137</small></small></h6>
+                      </div>
+                      <!-- <div class="col"></div> -->
+                    </div>
+                  </div>
+                </div>
+                   <div class="col">
+                     <div class="row">
+                       <div class="col-sm col-md-6 mb-3">
+                        <h6 class="font-weight-bold ">Picked up by:</h6>
+                       </div>
+                       <!-- <div class="col">
+                        <small>
+                          <a class="text-muted" href="#"><u>Create Shipping Label</u></a>
+                        </small>
+                       </div> -->
+                     </div>
+                     <div class="row rounded pb-3 bg-light">
+                       <div class="col">
+                         <small><u><a class="text-muted ml-lg-5" href="#">ORDERED</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">IN PROGRESS</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">READY</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">PICKED UP</a></u></small>
+                        <div class="progress" style="height: 20px; width: 100%;">
+                          <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="text-center">
+                          <a href="#"><small><u class="text-muted">Mark As Pick Up</u></small></a>
+                        </div>
+                       </div>
+                     </div>
+                     </div>
+                 </div>
+               </section> 
+
+               <!-- divider -->
+               <div class="divider bg-muted"><hr></div>
+
+               <section class="mb-5">
+                 <div class="row">
+                   <div class="col-sm">
+                     <div class="custom-control custom-checkbox mr-sm-2">
+                    <input type="checkbox" class="text-info custom-control-input" id="sameShipping">
+                    <label class="custom-control-label text-info" for="sameShipping">Amanda Jenstad </label>
+                    <small class="text-muted">(2 unfulfilled orders)</small>
+                    <div class="row">
+                      <div class="col-2.5 text-center mt-3">
+                        <img src="assets/images/Layer 13.png" width="55%" alt="">
+                        <p><small>(view order)</small></p>
+                      </div>
+                      <div class="col-4 mt-3">
+                        <h6><small class="font-weight-bold">Order Date<small class="text-muted ml-2">15/04/2022</small></small></h6>
+                        <h6><small class="font-weight-bold">Fullfillment Date <small class="text-muted ml-2">n/a</small></small></h6>
+                      </div>
+                      <div class="col-4 mt-3">
+                        <h6><small class="font-weight-bold">Total items<small class="text-muted ml-3">4 Items</small></small></h6>
+                        <h6><small class="font-weight-bold">Total price <small class="text-muted ml-3">$137</small></small></h6>
+                      </div>
+                      <!-- <div class="col"></div> -->
+                    </div>
+                  </div>
+                </div>
+                   <div class="col">
+                     <div class="row">
+                       <div class="col-sm-1 col-md-2">
+                        <img src="assets/images/Layer 12.png" alt="">
+                       </div>
+                       <div class="col-sm-1 col-md-4 d-flex align-items-center mb-3">
+                        <h6 class="font-weight-bold ">Tracking number</h6>
+                       </div>
+                       <div class="col mb-3">
+                        <h5 class="text-info">3455 5554 3455 5555</h5>
+                       </div>
+                     </div>
+                     <div class="row rounded pb-3 bg-light">
+                       <div class="col">
+                         <small><u><a class="text-muted ml-lg-5" href="#">ORDERED</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">IN PROGRESS</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">READY</a></u></small>
+                         <small><u><a class="text-muted ml-lg-5" href="#">SHIPPED</a></u></small>
+                        <div class="progress" style="height: 20px; width: 100%;">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="text-center">
+                          <a href="#"><small><u class="text-muted">Print Shipping Label</u></small></a>
+                        </div>
+                       </div>
+                     </div>
+                     </div>
+                 </div>
+               </section> 
+              
+              
+          
+              </div>
+
+            </div>
+          </div>
+    <!-- Js -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!-- Font awesome -->
+<script src="https://kit.fontawesome.com/c8bc92b441.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
